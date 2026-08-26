@@ -1,0 +1,34 @@
+# ---- build outputs ----
+out-vs/
+out-scalar/
+dist/
+build/
+*.log
+nul
+
+# ---- runtime artifacts ----
+native-dist/
+__pycache__/
+.venv311/
+.dsh-vision-toolkit/
+
+# ---- large binary assets (embedded inside the exe; kept local only) ----
+translation_assets/mtranserver.exe
+translation_assets/mtran_models/
+translation_assets/mtran_config/
+translation_assets/m2m100/
+translation_assets/CrispASR/
+translation_assets/gui_translation_test.py
+translation_assets/test_ui.ps1
+
+# ---- legacy python pipeline (superseded by the native C++ build) ----
+main.py
+build.spec
+build_embedded.spec
+build_embedded_dir.spec
+build_final.spec
+build_exe.bat
+build_embedded_dir.bat
+requirements.txt
+test_offline_package.py
+run_native_build.ps1
