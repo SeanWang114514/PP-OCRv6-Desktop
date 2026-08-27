@@ -35,3 +35,13 @@ build_embedded_dir.bat
 requirements.txt
 test_offline_package.py
 run_native_build.ps1
+
+# ---- arm64 build outputs & sources (reproducible via build_arm64.ps1) ----
+out-arm64/
+out-arm64-ncnn/
+out-arm64-ncnn-mt/
+out-arm64-opencv/
+native-dist-arm64/
+third_party-src/
+third_party/ncnn-arm64/
+third_party/opencv-arm64/
