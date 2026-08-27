@@ -19,7 +19,7 @@ if(MSVC)
   target_compile_options(ChineseOCRLiteDesktop PRIVATE /utf-8)
 endif()
 set_property(TARGET ChineseOCRLiteDesktop PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded")
-target_link_libraries(ChineseOCRLiteDesktop PRIVATE ncnn ${OpenCV_LIBS} OpenMP::OpenMP_CXX user32 gdi32 msimg32 winhttp)
+target_link_libraries(ChineseOCRLiteDesktop PRIVATE ncnn ${OpenCV_LIBS} OpenMP::OpenMP_CXX user32 gdi32 msimg32 winhttp dwmapi)
 
 # Keep the executable runnable directly from the CMake output directory.
 add_custom_command(TARGET ChineseOCRLiteDesktop POST_BUILD

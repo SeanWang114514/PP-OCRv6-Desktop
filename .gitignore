@@ -1,9 +1,12 @@
 # ---- build outputs ----
 out-vs/
+out-vs2/
+out/
 out-scalar/
 dist/
 build/
 *.log
+*.obj
 nul
 
 # ---- runtime artifacts ----
